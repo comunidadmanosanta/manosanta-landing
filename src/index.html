@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manosanta - Comunidad Viajera</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#f5f5dc',
+                        'cream-dark': '#e6e6c7',
+                        'brown': '#8B4513',
+                        'brown-dark': '#654321'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full bg-cream/95 backdrop-blur-md z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-2xl font-bold text-black tracking-wider">MANOSANTA</a>
+                    <img src="./assets/logo.png" alt="Manosanta Logo" class="h-5" />
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#servicios"
+                        class="text-gray-700 hover:text-brown transition-colors font-medium">Servicios</a>
+                    <a href="#nosotros"
+                        class="text-gray-700 hover:text-brown transition-colors font-medium">Nosotros</a>
+                    <a href="#contacto"
+                        class="text-gray-700 hover:text-brown transition-colors font-medium">Contacto</a>
+                    <div class="flex items-center space-x-3">
+                        <a href="https://www.instagram.com/comunidadmanosanta/" target="_blank"
+                            class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform text-lg">
+                            📷
+                        </a>
+                        <a href="https://wa.me/573148757246" target="_blank"
+                            class="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform text-lg">
+                            💬
+                        </a>
+                        <a href="#" target="_blank"
+                            class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform text-lg">
+                            📘
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 hero-bg"></div>
+        <div class="absolute inset-0 hero-overlay opacity-30"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4 floating">
+            <div class="mb-8">
+                <h1 class="text-6xl md:text-8xl font-bold text-black mb-4 tracking-wider gradient-text">
+                    MANOSANTA
+                </h1>
+
+                <!-- Arrow Decoration -->
+                <div class="flex items-center justify-center mb-4 space-x-4">
+                    <img src="./assets/logo.png" alt="Manosanta Logo" class="h-16" />
+                </div>
+
+                <p class="text-2xl md:text-3xl text-gray-600 font-light tracking-wide">
+                    Comunidad viajera
+                </p>
+            </div>
+
+            <p class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
+                Servicios con alma para quienes viajan en busca de descanso, salud o conexión real.
+                Tejiendo vínculos humanos y diseñando experiencias a la medida.
+            </p>
+
+            <a href="#contacto"
+                class="inline-block bg-brown hover:bg-brown-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                Conoce más
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white" id="servicios">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-4 gradient-text">
+                    Nuestros Servicios
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Experiencias pensadas con tiempo, dedicación y sentido para cada tipo de viajero
+                </p>
+            </div>
+
+            <!-- Services Grid - Centered for Desktop -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Service 1: Turismo de Bienestar -->
+                <div
+                    class="group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div
+                        class="h-64 service-image bg-gradient-to-br from-green-400 to-emerald-600 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-6xl text-white/90 group-hover:scale-110 transition-transform duration-300">
+                                🌿</div>
+                        </div>
+                        <!-- Placeholder for real image -->
+                        <div class="absolute bottom-4 left-4 text-white/80 text-sm">Bienestar · Descanso</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-black mb-4">Turismo de Bienestar</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Viajes suaves para personas mayores de 55 años. Experiencias adaptadas a su ritmo,
+                            salud y expectativas, con tecnología sencilla y mucho cuidado en los detalles.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2: Turismo en Salud -->
+                <div
+                    class="group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div
+                        class="h-64 service-image bg-gradient-to-br from-blue-500 to-cyan-600 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-6xl text-white/90 group-hover:scale-110 transition-transform duration-300">
+                                🏥</div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white/80 text-sm">Salud · Cuidado</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-black mb-4">Turismo en Salud</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Experiencias integrales que contemplan tratamiento médico, hospedaje y acompañamiento.
+                            Paquetes hechos a la medida con claridad en cada paso.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3: Turismo Barrial -->
+                <div
+                    class="group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div
+                        class="h-64 service-image bg-gradient-to-br from-orange-500 to-red-600 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-6xl text-white/90 group-hover:scale-110 transition-transform duration-300">
+                                🏘️</div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white/80 text-sm">Cultura · Comunidad</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-black mb-4">Turismo Barrial</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Vive la ciudad desde adentro. Eventos culturales y rutas barriales que integran
+                            comerciantes, artistas y vecinos con respeto y reciprocidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gradient-to-br from-cream via-cream-dark to-cream" id="nosotros">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-4xl md:text-5xl font-bold text-black mb-6 gradient-text">
+                        ¿Quién es Manosanta?
+                    </h2>
+                    <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+                        <p>
+                            Manosanta es <strong class="text-brown">Shay</strong>, una viajera del alma,
+                            sembrada ahora en Medellín, Colombia. Su vocación es crear bienestar para
+                            las personas que están de paso, no solo por un territorio, sino por la vida misma.
+                        </p>
+                        <p>
+                            En un mundo acelerado, Manosanta es un recordatorio de que vivir el presente
+                            no solo es posible, <strong class="text-brown">es necesario</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <div class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl border-l-4 border-brown">
+                        <blockquote class="text-2xl md:text-3xl text-gray-800 italic leading-relaxed mb-6">
+                            "Para ofrecer bienestar, tengo que conocer a cada persona. Darle su tiempo."
+                        </blockquote>
+                        <cite class="text-brown font-semibold text-xl not-italic">— Shay, Manosanta</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white" id="contacto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                ¿Te gustaría viajar diferente?
+            </h2>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed">
+                Manosanta no es una agencia. Es una experiencia viva,
+                una forma de tejer bienestar en el viaje.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="https://wa.me/573148757246" target="_blank"
+                    class="flex items-center space-x-4 bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg font-semibold min-w-48">
+                    <span class="text-2xl">💬</span>
+                    <span>WhatsApp</span>
+                </a>
+
+                <a href="https://www.instagram.com/comunidadmanosanta/" target="_blank"
+                    class="flex items-center space-x-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg font-semibold min-w-48">
+                    <span class="text-2xl">📷</span>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="#" target="_blank"
+                    class="flex items-center space-x-4 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg font-semibold min-w-48">
+                    <span class="text-2xl">📘</span>
+                    <span>Facebook</span>
+                </a>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="mt-16 pt-8 border-t border-gray-700">
+                <p class="text-gray-400 text-lg">
+                    Una invitación abierta a viajar con alma desde Medellín, Colombia
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>
