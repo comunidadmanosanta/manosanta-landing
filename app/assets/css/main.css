@@ -1,0 +1,44 @@
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-bg {
+    background: linear-gradient(-45deg, rgba(245, 245, 220, 0.9), rgba(139, 69, 19, 0.8), rgba(230, 230, 199, 0.9), rgba(101, 67, 33, 0.8));
+    background-size: 400% 400%;
+    animation: moveBackground 15s ease infinite;
+}
+
+.hero-overlay {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="mountains" cx="50%" cy="100%" r="50%"><stop offset="0%" stop-color="rgba(0,0,0,0.1)"/><stop offset="100%" stop-color="rgba(0,0,0,0)"/></radialGradient></defs><path d="M0,1000 L200,300 L400,500 L600,200 L800,400 L1000,100 L1000,1000 Z" fill="url(%23mountains)"/></svg>');
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax {
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.service-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #000 0%, #8B4513 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

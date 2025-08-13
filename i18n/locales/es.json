@@ -1,0 +1,45 @@
+{
+  "brand": "MANOSANTA",
+  "navbar": {
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "MANOSANTA",
+    "subtitle": "Comunidad viajera",
+    "description": "Servicios con alma para quienes viajan en busca de descanso, salud o conexión real. Tejiendo vínculos humanos y diseñando experiencias a la medida.",
+    "cta": "Conoce más"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Experiencias pensadas con tiempo, dedicación y sentido para cada tipo de viajero",
+    "wellness": {
+      "title": "Turismo de Bienestar",
+      "description": "Viajes suaves para personas mayores de 55 años. Experiencias adaptadas a su ritmo, salud y expectativas, con tecnología sencilla y mucho cuidado en los detalles."
+    },
+    "health": {
+      "title": "Turismo en Salud",
+      "description": "Experiencias integrales que contemplan tratamiento médico, hospedaje y acompañamiento. Paquetes hechos a la medida con claridad en cada paso."
+    },
+    "local": {
+      "title": "Turismo Barrial",
+      "description": "Vive la ciudad desde adentro. Eventos culturales y rutas barriales que integran comerciantes, artistas y vecinos con respeto y reciprocidad."
+    }
+  },
+  "about": {
+    "title": "¿Quién hay tras Manosanta?",
+    "p1": "Shay, una viajera del alma, sembrada ahora en Medellín, Colombia. Su vocación es crear bienestar para las personas que están de paso, no solo por un territorio, sino por la vida misma.",
+    "p2": "En un mundo acelerado, Manosanta es un recordatorio de que vivir el presente no solo es posible, es necesario.",
+    "quote": "Para ofrecer bienestar, tengo que conocer a cada persona. Darle su tiempo.",
+    "author": "— Shay, Manosanta"
+  },
+  "contact": {
+    "title": "¿Te gustaría viajar diferente?",
+    "description": "Manosanta no es una agencia. Es una experiencia viva, una forma de tejer bienestar en el viaje.",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "footer": "Una invitación abierta a viajar con alma desde Medellín, Colombia"
+  }
+}

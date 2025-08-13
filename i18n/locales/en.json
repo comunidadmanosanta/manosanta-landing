@@ -1,0 +1,45 @@
+{
+    "brand": "MANOSANTA",
+    "navbar": {
+        "services": "Services",
+        "about": "About Us",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "MANOSANTA",
+        "subtitle": "Travel community",
+        "description": "Soulful services for those traveling in search of rest, health, or real connection. Weaving human bonds and designing tailor-made experiences.",
+        "cta": "Learn more"
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "Experiences thoughtfully designed for every type of traveler",
+        "wellness": {
+            "title": "Wellness Tourism",
+            "description": "Gentle trips for people over 55. Experiences adapted to their pace, health, and expectations, with simple technology and attention to detail."
+        },
+        "health": {
+            "title": "Health Tourism",
+            "description": "Comprehensive experiences that include medical treatment, accommodation, and support. Tailor-made packages with clarity at every step."
+        },
+        "local": {
+            "title": "Neighborhood Tourism",
+            "description": "Live the city from within. Cultural events and neighborhood routes that connect merchants, artists, and locals with respect and reciprocity."
+        }
+    },
+    "about": {
+        "title": "Who is behind Manosanta?",
+        "p1": "Shay, a traveler at heart, now rooted in Medellín, Colombia. Her vocation is to create well-being for people passing through, not only in a place, but in life itself.",
+        "p2": "In a fast-paced world, Manosanta is a reminder that living in the present is not only possible, it's necessary.",
+        "quote": "To offer well-being, I need to know each person. Give them their time.",
+        "author": "— Shay, Manosanta"
+    },
+    "contact": {
+        "title": "Would you like to travel differently?",
+        "description": "Manosanta is not an agency. It is a living experience, a way to weave well-being into the journey.",
+        "whatsapp": "WhatsApp",
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "footer": "An open invitation to travel with soul from Medellín, Colombia"
+    }
+}

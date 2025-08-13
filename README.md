@@ -66,5 +66,3 @@ Este no es solo un emprendimiento turístico.
 > ✉️ **comunidadmanosanta@gmail.com**  
 > 📸 Instagram: [@manosanta.viajera](https://instagram.com/manosanta.viajera)  
 > 🌐 Sitio web: manosanta.lat
-
----

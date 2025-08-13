@@ -14,7 +14,7 @@
         }
         
         .hero-bg {
-            background: linear-gradient(-45deg, rgba(245, 245, 220, 0.9), rgba(139, 69, 19, 0.8), rgba(230, 230, 199, 0.9), rgba(101, 67, 33, 0.8));
+            background: linear-gradient(-45deg, rgba(245, 245, 220, 0.9), rgba(255, 215, 186, 0.8), rgba(230, 230, 199, 0.9), rgba(255, 211, 167, 0.8));
             background-size: 400% 400%;
             animation: moveBackground 15s ease infinite;
         }
@@ -37,7 +37,7 @@
         }
         
         .gradient-text {
-            background: linear-gradient(135deg, #000 0%, #8B4513 100%);
+            background: linear-gradient(135deg, #313131 0%, #532a0d 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
