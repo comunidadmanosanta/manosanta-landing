@@ -1,17 +1,20 @@
 <template>
   <section
-    class="py-20 bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white"
+    class="text-center py-20 bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white"
     id="contacto"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center">
         {{ $t("contact.title") }}
       </h2>
       <p
-        class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed"
+        class="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed text-center"
       >
         {{ $t("contact.description") }}
       </p>
+      <div class="mb-12 mt-4">
+        <ArtefactososNewsletter />
+      </div>
 
       <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
         <a

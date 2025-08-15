@@ -3,7 +3,6 @@
     <NavBar />
     <ClientOnly>
       <HeroSection />
-      <template #fallback>Loading...</template>
     </ClientOnly>
     <ServicesSection />
     <AboutSection />

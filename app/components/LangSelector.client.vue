@@ -1,15 +1,19 @@
 <script setup>
-const { locales, setLocale, locale } = useI18n();
+const { setLocale, locale } = useI18n();
+const locale_n = ref(locale.value);
+
+function toggleLocale() {
+  locale_n.value = locale_n.value === "es" ? "en" : "es";
+  setLocale(locale_n.value);
+}
 </script>
 
 <template>
-  <select
-    :value="locale"
-    @change="setLocale($event.target.value)"
-    class="border rounded px-2 py-1 text-sm"
+  <button
+    @click="toggleLocale"
+    class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 text-gray-700 font-semibold shadow hover:bg-gray-300 transition"
+    title="Cambiar idioma"
   >
-    <option v-for="loc in locales" :key="loc.code" :value="loc.code">
-      {{ loc.code }}
-    </option>
-  </select>
+    {{ locale.toUpperCase() }}
+  </button>
 </template>

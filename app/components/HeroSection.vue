@@ -3,7 +3,14 @@
     class="relative min-h-[calc(100vh-74px)] flex items-center justify-center overflow-hidden"
   >
     <div class="absolute inset-0 hero-overlay opacity-30"></div>
-    <UIBannerImgs :imgs="['/images/banner/1.jpg', '/images/banner/2.jpg']" />
+    <UIBannerImgs
+      :imgs="[
+        '/images/banner/1.jpg',
+        '/images/banner/2.jpg',
+        '/images/banner/3.jpg',
+        '/images/banner/4.jpg',
+      ]"
+    />
     <div
       class="relative z-10 text-center mx-auto px-4 floating bg-white bg-opacity-20 backdrop-blur-lg p-8 rounded-lg shadow-lg"
     >

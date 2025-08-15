@@ -37,6 +37,15 @@
     "contact": {
         "title": "Would you like to travel differently?",
         "description": "Manosanta is not an agency. It is a living experience, a way to weave well-being into the journey.",
+        "newsletter": {
+            "title": "Subscribe to our newsletter and receive more useful information for your next conscious trip.",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "phone": "Phone",
+            "birthday": "Birthday (MM/DD)",
+            "email": "Email",
+            "subscribe": "Subscribe"
+        },
         "whatsapp": "WhatsApp",
         "instagram": "Instagram",
         "facebook": "Facebook",

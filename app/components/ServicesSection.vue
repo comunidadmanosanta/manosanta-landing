@@ -22,11 +22,11 @@
           >
             <div class="absolute inset-0 bg-black/20"></div>
             <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="text-6xl text-white/90 group-hover:scale-110 transition-transform duration-300"
-              >
-                🌿
-              </div>
+              <img
+                src="/images/services/bienestar.jpg"
+                alt="Turismo de Bienestar"
+                class="w-full h-full object-contain rounded-lg group-hover:scale-110 transition-transform duration-300 shadow-lg"
+              />
             </div>
             <div class="absolute bottom-4 left-4 text-white/80 text-sm">
               Bienestar · Descanso
@@ -51,11 +51,11 @@
           >
             <div class="absolute inset-0 bg-black/20"></div>
             <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="text-6xl text-white/90 group-hover:scale-110 transition-transform duration-300"
-              >
-                🏥
-              </div>
+              <img
+                src="/images/services/salud.jpg"
+                alt="Turismo en Salud"
+                class="w-full h-full object-contain rounded-lg group-hover:scale-110 transition-transform duration-300 shadow-lg"
+              />
             </div>
             <div class="absolute bottom-4 left-4 text-white/80 text-sm">
               Salud · Cuidado
@@ -80,11 +80,11 @@
           >
             <div class="absolute inset-0 bg-black/20"></div>
             <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="text-6xl text-white/90 group-hover:scale-110 transition-transform duration-300"
-              >
-                🏘️
-              </div>
+              <img
+                src="/images/services/barrial.jpg"
+                alt="Turismo Barrial"
+                class="w-full h-full object-contain rounded-lg group-hover:scale-110 transition-transform duration-300 shadow-lg"
+              />
             </div>
             <div class="absolute bottom-4 left-4 text-white/80 text-sm">
               Cultura · Comunidad
