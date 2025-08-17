@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "10.0.5",
+    "@vueuse/motion": "^3.0.3",
+    "@vueuse/nuxt": "13.6.0",
+    "aos": "^2.3.4",
     "nuxt": "^4.0.3",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"

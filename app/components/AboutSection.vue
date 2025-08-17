@@ -5,7 +5,7 @@
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div class="order-2 lg:order-1">
+        <div data-aos="zoom-in" data-aos-delay="100" class="order-2 lg:order-1">
           <h2
             class="text-4xl md:text-5xl font-bold text-black mb-6 gradient-text"
           >
@@ -21,7 +21,7 @@
           </div>
         </div>
 
-        <div class="order-1 lg:order-2">
+        <div data-aos="zoom-in" data-aos-delay="200" class="order-1 lg:order-2">
           <div
             class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl border-l-4 border-brown"
           >

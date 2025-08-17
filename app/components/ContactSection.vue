@@ -3,20 +3,33 @@
     class="text-center py-20 bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white"
     id="contacto"
   >
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center">
+    <div
+      data-aos="zoom-in"
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+    >
+      <h2
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        class="text-4xl md:text-5xl font-bold mb-6 text-center"
+      >
         {{ $t("contact.title") }}
       </h2>
       <p
+        data-aos="zoom-in"
+        data-aos-delay="150"
         class="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed text-center"
       >
         {{ $t("contact.description") }}
       </p>
-      <div class="mb-12 mt-4">
-        <ArtefactososNewsletter />
+      <div data-aos="zoom-in" data-aos-delay="200" class="mb-12 mt-4">
+        <ArtefactosNewsletter />
       </div>
 
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+      <div
+        data-aos="zoom-in"
+        data-aos-delay="250"
+        class="flex flex-col sm:flex-row justify-center items-center gap-6"
+      >
         <a
           href="https://wa.me/573148757246"
           target="_blank"

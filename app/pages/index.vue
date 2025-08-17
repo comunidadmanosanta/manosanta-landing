@@ -1,13 +1,14 @@
 <template>
   <div>
     <NavBar />
-    <ClientOnly>
-      <HeroSection />
-    </ClientOnly>
+
+    <HeroSection />
+
     <ServicesSection />
     <AboutSection />
     <ContactSection />
+    <ArtefactosAudioPlayer />
   </div>
 </template>
 
-<script setup></script>
+<script setup lang="ts"></script>
