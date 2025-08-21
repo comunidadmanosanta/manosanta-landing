@@ -1,58 +1,51 @@
 <template>
   <section
+    :class="$attrs.class"
     class="relative min-h-[calc(100vh-74px)] flex items-center justify-center overflow-hidden"
+    id="home"
   >
     <div class="absolute inset-0 hero-overlay opacity-30"></div>
 
     <UIBannerImgs
       :imgs="[
+        '/images/banner/1.jpg',
         '/images/banner/2.jpg',
         '/images/banner/3.jpg',
         '/images/banner/4.jpg',
       ]"
     />
-    <div
-      data-aos="zoom-in"
-      class="relative z-10 text-center mx-auto px-4 floating bg-white bg-opacity-20 backdrop-blur-lg p-8 rounded-lg shadow-lg"
-    >
-      <div class="mb-8">
-        <h1
-          data-aos="zoom-in"
-          data-aos-delay="100"
-          class="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-black mb-4 tracking-wider gradient-text"
-        >
-          {{ $t("hero.title") }}
-        </h1>
-        <div
-          class="flex items-center justify-center mb-4 space-x-4"
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        >
-          <img src="/images/logo.png" alt="Manosanta Logo" class="h-16" />
+    <div data-aos="zoom-in" class="relative z-10 text-center mx-auto px-4">
+      <div class="floating">
+        <div class="mb-8">
+          <h1
+            class="text-4xl sm:text-4xl md:text-6xl lg:text-8xl font-bold mb-4 tracking-wider gradient-text"
+            :data-text="$t('hero.subtitle')"
+          >
+            <span>{{ $t("hero.subtitle") }}</span>
+          </h1>
         </div>
         <p
           data-aos="zoom-in"
-          data-aos-delay="150"
-          class="text-2xl md:text-3xl text-gray-600 font-light tracking-wide"
+          data-aos-delay="220"
+          class="rounded-lg text-xl md:text-2xl text-white mb-8 leading-relaxed max-w-lg lg:max-w-3xl mx-auto"
+          style="
+            text-shadow: rgb(0, 0, 0) 0px 0px 10px, rgb(0, 0, 0) 0px 0px 30px,
+              rgb(0, 0, 0) 0px 0px 70px, rgb(0, 0, 0) 0px 0px 120px,
+              rgb(0, 0, 0) 0px 0px 200px;
+          "
         >
-          {{ $t("hero.subtitle") }}
+          {{ $t("hero.description") }}
         </p>
+        <a
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          href="#servicios"
+          class="inline-flex flex-col bg-brown bg-opacity-80 items-center opacity-70 text-white p-5 py-2 rounded-full text-xl font-semibold shadow-xl"
+        >
+          <span>{{ $t("hero.cta") }}</span>
+          <IconsArrowBottom class="text-sm" />
+        </a>
       </div>
-      <p
-        data-aos="zoom-in"
-        data-aos-delay="220"
-        class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto"
-      >
-        {{ $t("hero.description") }}
-      </p>
-      <a
-        data-aos="zoom-in"
-        data-aos-delay="300"
-        href="#contacto"
-        class="inline-block bg-brown hover:bg-brown-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
-      >
-        {{ $t("hero.cta") }}
-      </a>
     </div>
   </section>
 </template>

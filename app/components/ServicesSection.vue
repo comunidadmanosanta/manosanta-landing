@@ -12,7 +12,7 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-3 gap-4 sm:gap-8 max-w-6xl mx-auto">
         <!-- Servicio 1 -->
 
         <!-- Servicio 1: Turismo de Bienestar -->
@@ -21,7 +21,7 @@
           gradient-class="bg-gradient-to-br from-green-400 to-emerald-600"
           image-src="/images/services/bienestar.jpg"
           image-alt="Turismo de Bienestar"
-          tags="Bienestar · Descanso"
+          :tags="$t('services.wellness.tags')"
           :title="$t('services.wellness.title')"
           :description="$t('services.wellness.description')"
           :header-aos-delay="100"
@@ -34,7 +34,7 @@
           gradient-class="bg-gradient-to-br from-blue-500 to-cyan-600"
           image-src="/images/services/salud.jpg"
           image-alt="Turismo en Salud"
-          tags="Salud · Cuidado"
+          :tags="$t('services.health.tags')"
           :title="$t('services.health.title')"
           :description="$t('services.health.description')"
           :header-aos-delay="100"
@@ -47,7 +47,7 @@
           gradient-class="bg-gradient-to-br from-orange-500 to-red-600"
           image-src="/images/services/barrial.jpg"
           image-alt="Turismo Barrial"
-          tags="Cultura · Comunidad"
+          :tags="$t('services.local.tags')"
           :title="$t('services.local.title')"
           :description="$t('services.local.description')"
           :header-aos-delay="100"

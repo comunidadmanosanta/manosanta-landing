@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import PrivacyPolicy from "./PrivacyPolicy.vue";
+</script>
+
 <template>
   <section
     class="text-center py-20 bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white"
@@ -62,11 +66,61 @@
           </span>
           <span>Facebook</span>
         </a>
+        <a
+          href="#"
+          target="_blank"
+          class="flex items-center space-x-4 bg-black hover:bg-gray-950 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg font-semibold min-w-48"
+        >
+          <span class="text-2xl">
+            <IconsTikTok />
+          </span>
+          <span>TikTok</span>
+        </a>
+      </div>
+      <div>
+        <p
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          class="text-gray-400 text-lg font-bold mt-8"
+        >
+          {{ $t("contact.hours.title") }}
+        </p>
+        <p
+          data-aos="zoom-in"
+          data-aos-delay="350"
+          class="text-gray-400 text-md"
+        >
+          {{ $t("contact.hours.monday") }}
+        </p>
+        <p
+          data-aos="zoom-in"
+          data-aos-delay="400"
+          class="text-gray-400 text-md"
+        >
+          {{ $t("contact.hours.saturday") }}
+        </p>
+        <p
+          data-aos="zoom-in"
+          data-aos-delay="400"
+          class="text-gray-400 text-md pt-2 mt-2 border-t border-gray-700 inline-block"
+        >
+          <b>Email:</b>
+          comunidadmanosanta@gmail.com
+        </p>
+        <p
+          data-aos="zoom-in"
+          data-aos-delay="400"
+          class="text-gray-400 text-md"
+        >
+          <b>Whatsapp:</b>
+          (+57) 314 875 7246
+        </p>
       </div>
 
       <div class="mt-16 pt-8 border-t border-gray-700">
-        <p class="text-gray-400 text-lg">
+        <p class="text-gray-400 text-md">
           {{ $t("contact.footer") }}
+          <PrivacyPolicy />
         </p>
       </div>
     </div>

@@ -16,14 +16,17 @@
         "subtitle": "Experiences thoughtfully designed for every type of traveler",
         "wellness": {
             "title": "Wellness Tourism",
+            "tags": "Wellness · Rest",
             "description": "Gentle trips for people over 55. Experiences adapted to their pace, health, and expectations, with simple technology and attention to detail."
         },
         "health": {
             "title": "Health Tourism",
+            "tags": "Health · Care",
             "description": "Comprehensive experiences that include medical treatment, accommodation, and support. Tailor-made packages with clarity at every step."
         },
         "local": {
             "title": "Neighborhood Tourism",
+            "tags": "Culture · Community",
             "description": "Live the city from within. Cultural events and neighborhood routes that connect merchants, artists, and locals with respect and reciprocity."
         }
     },
@@ -44,11 +47,25 @@
             "phone": "Phone",
             "birthday": "Birthday (MM/DD)",
             "email": "Email",
-            "subscribe": "Subscribe"
+            "subscribe": "Subscribe",
+            "sending": "Sending..."
         },
         "whatsapp": "WhatsApp",
         "instagram": "Instagram",
         "facebook": "Facebook",
-        "footer": "An open invitation to travel with soul from Medellín, Colombia"
+        "footer": "An open invitation to travel with soul from Medellín, Colombia",
+        "hours": {
+            "title": "Business Hours",
+            "monday": "Monday to Friday: 8:00 - 18:00",
+            "saturday": "Saturday: 8:00 - 13:00"
+        }
+    },
+    "privacy": {
+        "link": "Privacy Policy",
+        "title": "Privacy Policy",
+        "paragraph1": "On this page we respect and protect your personal data. The information we collect will only be used to improve your experience, offer you relevant content, and keep you informed about our updates.",
+        "paragraph2": "We will never share your information with third parties without your express consent.",
+        "paragraph3": "You can request the deletion of your data from our database at any time by writing to:",
+        "thanks": "Thank you for trusting us ✨"
     }
 }

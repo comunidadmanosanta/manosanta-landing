@@ -1,26 +1,81 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 
 const isPlaying = ref(false);
 let audio: HTMLAudioElement;
+let fadeInterval: number | null = null;
+const defaultVolume = 0.7; // volumen normal
 
-onMounted(() => {
-  audio = new Audio("/audio/main-001.mp3");
-  audio.loop = true; // si quieres que siga sonando
-  audio.volume = 0.7;
-});
+const clearFade = () => {
+  if (fadeInterval) {
+    clearInterval(fadeInterval);
+    fadeInterval = null;
+  }
+};
+
+const fadeVolume = (target: number, step: number, callback?: () => void) => {
+  clearFade();
+  fadeInterval = window.setInterval(() => {
+    if (!audio) return;
+    if (
+      (step < 0 && audio.volume <= target) ||
+      (step > 0 && audio.volume >= target)
+    ) {
+      audio.volume = target;
+      clearFade();
+      if (callback) callback();
+    } else {
+      audio.volume = Math.min(Math.max(audio.volume + step, 0), 1);
+    }
+  }, 100); // cada 100ms suaviza el cambio
+};
 
 const togglePlay = () => {
   if (!audio) return;
 
   if (isPlaying.value) {
-    audio.pause();
-    isPlaying.value = false;
+    fadeVolume(0, -0.1, () => {
+      audio.pause();
+      isPlaying.value = false;
+      audio.volume = defaultVolume; // reset por si vuelve
+    });
   } else {
+    audio.volume = 0; // arranca suave
     audio.play();
     isPlaying.value = true;
+    fadeVolume(defaultVolume, 0.1);
   }
 };
+
+// Manejo de visibilidad
+const handleVisibilityChange = () => {
+  if (!audio || !isPlaying.value) return;
+
+  if (document.hidden) {
+    fadeVolume(0, -0.1, () => audio.pause());
+  } else {
+    audio.play();
+    audio.volume = 0;
+    fadeVolume(defaultVolume, 0.1);
+  }
+};
+
+onMounted(() => {
+  audio = new Audio("/audio/main-001.mp3");
+  audio.loop = true;
+  audio.volume = defaultVolume;
+
+  document.addEventListener("visibilitychange", handleVisibilityChange);
+});
+
+onUnmounted(() => {
+  if (audio) {
+    audio.pause();
+    audio = null;
+  }
+  clearFade();
+  document.removeEventListener("visibilitychange", handleVisibilityChange);
+});
 </script>
 
 <template>

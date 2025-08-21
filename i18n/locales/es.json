@@ -16,14 +16,17 @@
     "subtitle": "Experiencias pensadas con tiempo, dedicación y sentido para cada tipo de viajero",
     "wellness": {
       "title": "Turismo de Bienestar",
+      "tags": "Bienestar · Descanso",
       "description": "Viajes suaves para personas mayores de 55 años. Experiencias adaptadas a su ritmo, salud y expectativas, con tecnología sencilla y mucho cuidado en los detalles."
     },
     "health": {
       "title": "Turismo en Salud",
+      "tags": "Salud · Cuidado",
       "description": "Experiencias integrales que contemplan tratamiento médico, hospedaje y acompañamiento. Paquetes hechos a la medida con claridad en cada paso."
     },
     "local": {
       "title": "Turismo Barrial",
+      "tags": "Cultura · Comunidad",
       "description": "Vive la ciudad desde adentro. Eventos culturales y rutas barriales que integran comerciantes, artistas y vecinos con respeto y reciprocidad."
     }
   },
@@ -44,11 +47,25 @@
       "phone": "Teléfono",
       "birthday": "Cumpleaños (MM/DD)",
       "email": "Correo electrónico",
-      "subscribe": "Suscribirse"
+      "subscribe": "Suscribirse",
+      "sending": "Enviando..."
     },
     "whatsapp": "WhatsApp",
     "instagram": "Instagram",
     "facebook": "Facebook",
-    "footer": "Una invitación abierta a viajar con alma desde Medellín, Colombia"
+    "footer": "Una invitación abierta a viajar con alma desde Medellín, Colombia",
+    "hours": {
+      "title": "Horario de atención",
+      "monday": "Lunes a Viernes: 8:00 AM - 6:00PM",
+      "saturday": "Sábados: 08:00 AM - 1:00PM"
+    }
+  },
+  "privacy": {
+    "openLink": "Política de Privacidad",
+    "title": "Política de Privacidad",
+    "paragraph1": "En esta página respetamos y protegemos tus datos personales. La información que recopilamos solo será utilizada para mejorar tu experiencia, ofrecerte contenido relevante y mantenerte informado sobre nuestras novedades.",
+    "paragraph2": "Nunca compartiremos tu información con terceros sin tu consentimiento expreso.",
+    "paragraph3": "Puedes solicitarnos en cualquier momento la eliminación de tus datos de nuestra base escribiéndonos a:",
+    "paragraph4": "Gracias por confiar en nosotros ✨"
   }
 }
