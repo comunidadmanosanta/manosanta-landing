@@ -9,12 +9,12 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div @click.prevent="" class="inline-block relative">
+  <div class="inline-block relative">
     <IconsWhatsApp />
     <Transition name="fade">
       <div
         v-if="openedWhatsapp"
-        class="absolute -bottom-10 -left-11 mt-2 bg-white hover:bg-gray-200 rounded-lg shadow-lg z-10"
+        class="absolute -bottom-12 right-1/2 translate-x-1/2 mt-2 bg-white hover:bg-gray-200 rounded-lg shadow-lg z-10 text-xs md:text-md"
       >
         <a
           href="https://wa.me/573148757246"
