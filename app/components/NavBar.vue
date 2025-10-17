@@ -15,8 +15,7 @@ const openedMenu = ref(false);
             to="#home"
             class="text-lg font-bold text-black tracking-wider flex flex-col items-center justify-center"
           >
-            {{ $t("brand") }}
-            <img src="/images/logo.png" alt="Manosanta Logo" class="h-6" />
+            <img src="/images/logo.png" alt="Manosanta Logo" class="h-12" />
           </NuxtLink>
         </div>
 
@@ -68,9 +67,9 @@ const openedMenu = ref(false);
               ><a
                 href="https://wa.me/573148757246"
                 target="_blank"
-                class="ml-3 mr-3 lg:mr-8 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform text-sm"
+                class="relative ml-3 mr-3 lg:mr-8 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform text-sm"
               >
-                <IconsWhatsApp />
+                <CtaWhatsApp />
               </a>
               <a
                 href="https://www.tiktok.com/@comunidadmanosanta"
@@ -98,7 +97,7 @@ const openedMenu = ref(false);
               target="_blank"
               class="ml-3 mr-3 lg:mr-8 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform text-lg"
             >
-              <IconsWhatsApp />
+              <CtaWhatsApp />
             </a>
             <button @click.prevent="openedMenu = !openedMenu">
               <IconsClose v-if="openedMenu" />

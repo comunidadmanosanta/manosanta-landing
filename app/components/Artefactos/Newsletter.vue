@@ -82,7 +82,7 @@ async function subscribe() {
       <button
         type="submit"
         :disabled="loading"
-        class="px-5 py-2 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-md shadow transition disabled:opacity-50 disabled:cursor-not-allowed"
+        class="px-5 py-2 bg-[#5881C1] text-white font-semibold rounded-md shadow transition disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {{
           loading

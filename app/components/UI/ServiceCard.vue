@@ -1,17 +1,16 @@
 <template>
-  <div
+  <article
     data-aos="flip-right"
     :data-aos-delay="aosDelay"
-    class="group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+    class="group border bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
   >
     <!-- Header con imagen y gradiente -->
-    <div
+    <header
       :data-aos="headerAos"
       :data-aos-delay="headerAosDelay"
-      class="h-64 relative overflow-hidden"
-      :class="gradientClass"
+      class="h-40 lg:h-52 relative overflow-hidden"
     >
-      <div class="absolute inset-0 bg-black/20"></div>
+      <div class="absolute inset-0"></div>
 
       <!-- Slot para contenido personalizado del header -->
       <div class="absolute inset-0 flex items-center justify-center">
@@ -25,27 +24,23 @@
       </div>
 
       <!-- Tags/categorías -->
-      <div class="absolute bottom-4 left-4 text-white/80 text-sm">
+      <div class="absolute bottom-4 left-4 text-gray-500 text-sm">
         <slot name="tags">
           {{ tags }}
         </slot>
       </div>
-    </div>
+    </header>
 
     <!-- Contenido principal -->
-    <div class="p-8" :data-aos="contentAos" :data-aos-delay="contentAosDelay">
+    <div class="p-4" :data-aos="contentAos" :data-aos-delay="contentAosDelay">
       <!-- Slot para título personalizable -->
-      <h3 class="text-2xl font-bold text-black mb-4">
-        <slot name="title">
-          {{ title }}
-        </slot>
+      <h3 class="text-xl font-bold text-black mb-4 text-center">
+        {{ title }}
       </h3>
 
       <!-- Slot para descripción personalizable -->
       <div class="text-gray-600 leading-relaxed">
-        <slot name="description">
-          {{ description }}
-        </slot>
+        {{ description }}
       </div>
 
       <!-- Slot adicional para contenido extra -->
@@ -54,7 +49,7 @@
 
     <!-- Slot para footer si se necesita -->
     <slot name="footer"></slot>
-  </div>
+  </article>
 </template>
 
 <script setup>

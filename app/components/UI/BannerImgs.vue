@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute inset-0 overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden opacity-50">
     <transition-group name="fade" tag="div">
       <img
         v-for="(img, index) in [safeImgs[currentImage]]"

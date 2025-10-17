@@ -2,10 +2,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: "#f5f5dc",
-        "cream-dark": "#e6e6c7",
-        brown: "#8B4513",
-        "brown-dark": "#654321",
+        cream: "#c8bcb1",
+        "cream-dark": "#7f746a",
+        brown: "#ab9860",
+        "brown-dark": "#6a5f3d",
       },
     },
   },

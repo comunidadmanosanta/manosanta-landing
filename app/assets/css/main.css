@@ -1,14 +1,67 @@
-import "aos/dist/aos.css"
+import "aos/dist/aos.css" @font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/helvetica/HelveticaNeueLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/helvetica/HelveticaNeueRegular.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/helvetica/HelveticaNeueBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/helvetica/HelveticaNeueBoldItalic.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes moveBackground {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 section {
@@ -16,40 +69,38 @@ section {
 }
 
 html {
-    scroll-behavior: smooth;
-}
-
-.floating {
-    animation: float 6s ease-in-out infinite;
+  scroll-behavior: smooth;
 }
 
 .hero-bg {
-    background: linear-gradient(-45deg, rgba(245, 245, 220, 0.9), rgba(139, 69, 19, 0.8), rgba(230, 230, 199, 0.9), rgba(101, 67, 33, 0.8));
-    background-size: 400% 400%;
-    animation: moveBackground 15s ease infinite;
+  background-color: linear-gradient(
+    -45deg,
+    rgba(245, 245, 220, 0.9),
+    rgba(139, 69, 19, 0.8),
+    rgba(230, 230, 199, 0.9),
+    rgba(101, 67, 33, 0.8)
+  );
+  background-size: 400% 400%;
+  animation: moveBackground 15s ease infinite;
 }
 
-.hero-overlay {
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="mountains" cx="50%" cy="100%" r="50%"><stop offset="0%" stop-color="rgba(0,0,0,0.1)"/><stop offset="100%" stop-color="rgba(0,0,0,0)"/></radialGradient></defs><path d="M0,1000 L200,300 L400,500 L600,200 L800,400 L1000,100 L1000,1000 Z" fill="url(%23mountains)"/></svg>');
-    background-size: cover;
-    background-position: center;
-}
+
 
 .parallax {
-    transform: translateZ(0);
-    will-change: transform;
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .service-image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .gradient-text {
   position: relative;
   display: inline-block;
-  background: linear-gradient(135deg, #000 0%, #8B4513 100%);
+  background: linear-gradient(135deg, #000 0%, #8b4513 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -58,7 +109,7 @@ html {
 .gradient-text {
   position: relative;
   display: inline-block;
-  background: linear-gradient(135deg, #000 0%, #8B4513 100%);
+  background: linear-gradient(135deg, #000 0%, #8b4513 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -74,8 +125,14 @@ html {
   color: #fff; /* base para que el glow funcione */
   -webkit-text-fill-color: transparent; /* asegura que no tape */
   background: none;
-  text-shadow: 
-               0 0 40px rgba(255,255,255,0.7);
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
   z-index: -2; /* detrás del texto */
   pointer-events: none; /* no bloquea clics */
+}
+
+.colors {
+  --cream: #c8bcb1;
+  --cream-dark: #7f746a;
+  --brown: #ab9860;
+  --brown-dark: #6a5f3d;
 }

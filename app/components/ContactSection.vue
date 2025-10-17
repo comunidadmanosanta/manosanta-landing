@@ -32,7 +32,7 @@ import PrivacyPolicy from "./PrivacyPolicy.vue";
       <div
         data-aos="zoom-in"
         data-aos-delay="250"
-        class="flex flex-col sm:flex-row justify-center items-center gap-6"
+        class="flex flex-col lg:flex-row justify-center items-center gap-6"
       >
         <a
           href="https://wa.me/573148757246"
@@ -78,13 +78,13 @@ import PrivacyPolicy from "./PrivacyPolicy.vue";
         </a>
       </div>
       <div>
-        <p
+        <h3
           data-aos="zoom-in"
           data-aos-delay="300"
-          class="text-gray-400 text-lg font-bold mt-8"
+          class="text-gray-400 text-lg font-bold mt-8 uppercase"
         >
           {{ $t("contact.hours.title") }}
-        </p>
+        </h3>
         <p
           data-aos="zoom-in"
           data-aos-delay="350"
