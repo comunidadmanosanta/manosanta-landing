@@ -1,30 +1,18 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-const openedWhatsapp = ref(false);
-onMounted(() => {
-  window.addEventListener("scroll", (e) => {
-    if (window.pageYOffset > 200) openedWhatsapp.value = true;
-    else openedWhatsapp.value = false;
-  });
-});
 </script>
 <template>
   <div class="inline-block relative">
     <IconsWhatsApp />
-    <Transition name="fade">
+    <div class="absolute -bottom-12 right-1/2 translate-x-1/2 mt-2">
       <div
-        v-if="openedWhatsapp"
-        class="absolute -bottom-12 right-1/2 translate-x-1/2 mt-2 bg-white hover:bg-gray-200 rounded-lg shadow-lg z-10 text-xs md:text-md"
+        class="bg-white hover:bg-gray-200 rounded-lg shadow-lg z-10 text-xs md:text-md animate-bounce"
       >
-        <a
-          href="https://wa.me/573148757246"
-          target="_blank"
-          class="block px-4 py-2 text-gray-800"
-        >
+        <div class="block px-4 py-2 text-gray-800">
           {{ $t("contact.whatsappCTA") }}
-        </a>
+        </div>
       </div>
-    </Transition>
+    </div>
   </div>
 </template>
 <style lang="css" scoped>

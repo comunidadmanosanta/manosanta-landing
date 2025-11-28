@@ -1,5 +1,6 @@
 {
     "brand": "MANOSANTA",
+    "enconstruccion": "Soon we will travel together, we are preparing a travel experience that suits your pace.",
     "navbar": {
         "services": "Services",
         "about": "About Us",
@@ -51,7 +52,8 @@
             "sending": "Sending..."
         },
         "whatsapp": "WhatsApp",
-        "whatsappCTA": "¿hablamos?",        "instagram": "Instagram",
+        "whatsappCTA": "Interested?",
+        "instagram": "Instagram",
         "facebook": "Facebook",
         "footer": "An open invitation to travel with soul from Medellín, Colombia",
         "hours": {

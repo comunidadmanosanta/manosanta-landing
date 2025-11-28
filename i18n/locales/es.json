@@ -1,5 +1,6 @@
 {
   "brand": "MANOSANTA",
+  "enconstruccion": "Pronto viajaremos juntos, estamos preparando una experiencia de viaje que se adapte a tu ritmo.",
   "navbar": {
     "services": "Servicios",
     "about": "Nosotros",
@@ -51,7 +52,7 @@
       "sending": "Enviando..."
     },
     "whatsapp": "WhatsApp",
-    "whatsappCTA": "¿Hablamos?",
+    "whatsappCTA": "¿Interesada?",
     "instagram": "Instagram",
     "facebook": "Facebook",
     "footer": "Una invitación abierta a viajar con alma desde Medellín, Colombia",
